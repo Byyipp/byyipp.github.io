@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
       targets: '.animated-title',
       opacity: [0, 1],
       translateY: [-50, 0],
-      duration: 1500,
+      duration: 6000,
       easing: 'easeOutExpo',
     });
   
