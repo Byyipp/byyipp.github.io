@@ -1,0 +1,18 @@
+/* Add your custom styles here */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+/* ... */
+header {
+    background-color: #222;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .animated-title {
+    opacity: 0;
+  }
+  
+  
