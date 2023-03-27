@@ -1,22 +1,46 @@
-/* Add your custom styles here */
 body {
-    background-color: #222;
-    color: white;
     margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-  
+    color: #f0f0f0;
+    background-color: #333;
   }
-/* ... */
-header {
+  
+  header {
     background-color: #222;
-    color: white;
     padding: 1rem 0;
     text-align: center;
   }
   
-  .animated-title {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .project {
+    flex: 1;
+    max-width: 400px;
+    background-color: #444;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transform: translateY(100px);
     opacity: 0;
   }
   
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .project-description {
+    padding: 0 1rem 1rem;
+  }
   
