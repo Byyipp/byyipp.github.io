@@ -12,11 +12,11 @@ body {
   }
   
   .projects {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 5rem;
+    padding: 4rem;
   }
   
   .project {
@@ -26,8 +26,8 @@ body {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    transform: translateY(100px);
-    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .project-image {
