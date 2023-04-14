@@ -1,16 +1,16 @@
 
-const textToType = 'console.log("Hello World!")\nvar userInfo = {\n\tname: "Brandon Yip",\n\toccupation: "Software Developer"\n}';
+const textToType = 'console.log("Hello World!")\nvar userInfo = {\n\tname: "Brandon Yip",\n\toccupation: "Back-end Software Developer"\n}';
 const typingTextElement = document.querySelector('.typing-text');
 let typingIndex = 0;
-const delay = 100;
+const delay = 50;
 
 const timer = ms => new Promise(res => setTimeout(res, ms))
 
-var test = {
-  name: "Brandon",
-  occupation: "Dev"
-}
-console.log()
+// var test = {
+//   name: "Brandon",
+//   occupation: "Dev"
+// }
+// console.log()
 
 function createColoredSpan(text, className) {
     const span = document.createElement('span');
@@ -18,14 +18,6 @@ function createColoredSpan(text, className) {
     span.className = className;
     typingTextElement.appendChild(span);
 }
-
-// function typeText() {
-//   if (typingIndex < textToType.length) {
-//       typingTextElement.innerHTML += textToType.charAt(typingIndex);
-//       typingIndex++;
-//       setTimeout(typeText, 100);
-//   }
-// }
 
 async function typeText() {
     if (typingIndex < textToType.length) {
@@ -153,7 +145,7 @@ async function typeText() {
           let tempvar = "console";
           function consoletype (letter) {
             return new Promise ((resolve, reject) => {
-              createColoredSpan(letter, 'user-info');
+              createColoredSpan(letter, 'console');
               setTimeout(() => {
                 resolve();
               }, delay);
@@ -172,7 +164,7 @@ async function typeText() {
         }
 
         typingIndex++;
-        setTimeout(typeText, 200);
+        setTimeout(typeText, delay);
     }
 }
 
