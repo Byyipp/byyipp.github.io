@@ -1,55 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #d2d6de;
-    background-color: #1c1e26;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  font-family: monospace;
+  font-size: 24px;
+  color: #00ff00;
+  white-space: pre;
+}
+
+.typing-text:after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
   }
-  
-  header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #2c2e36;
+  50% {
+      opacity: 0;
   }
-  
-  .animated-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #62b0ff;
-  }
-  
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 2rem;
-    padding: 2rem;
-    background-color: #1c1e26;
-  }
-  
-  .project {
-    background-color: #2c2e36;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .project-image {
-    width: 100%;
-    display: block;
-  }
-  
-  .project-title {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-    margin: 0;
-    color: #62b0ff;
-  }
-  
-  .project-description {
-    padding: 1rem;
-    text-align: center;
-    margin: 0;
-  }
-  
+}
+
+.paren {
+  color: #f1d710;
+}
+
+.quotes {
+  color: #00ff00;
+}
+
+.key {
+  color: #ff1493;
+}
+
+.string {
+  color: #00ff00;
+}
+
+.var-keyword {
+  color: #358cd6; /* Change to the desired color for "var" */
+}
+
+.user-info {
+  color: #4fc1ff; /* Change to the desired color for "userInfo" */
+}
+
+.white-char {
+  color: #ffffff;
+}
+
+.log {
+  color: #dcdc9d;
+}
