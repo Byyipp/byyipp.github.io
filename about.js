@@ -1,13 +1,16 @@
 const contentMap = {
-  Description: `My name is Brandon Yip, and I am a passionate back-end software developer. I graduated from Rutgers University, New Brunswick in 2023, where I honed my skills and developed a strong foundation in computer programming. Throughout my academic journey and professional experience, I've developed a keen interest in the following programming languages:
+  Description: `My name is Brandon Yip, and I am a passionate back-end software developer. I graduated from Rutgers University, New Brunswick in 2023, where I honed my skills and developed a strong foundation in computer programming. Throughout my academic journey and professional experience, I've developed a keen interest in:
 
   - Golang
   - Python
   - JavaScript
+  - Solidity
 
   As a dedicated and meticulous developer, I strive to create efficient and well-structured code. My expertise in these languages enables me to effectively tackle complex challenges and contribute to innovative projects in the software development field.
   `,
-  Hobbies: "Your hobbies content goes here...\n\n\n\n\n\n",
+  Hobbies: `In my free time, I enjoy exploring various APIs from different companies and integrating them into my personal projects. This not only helps me expand my knowledge and skillset but also allows me to experiment with creative solutions for a wide range of applications.
+
+  Another area that fascinates me is blockchain technology, particularly its potential to revolutionize various industries in the future. I am an avid learner and creator of smart contracts on the Ethereum blockchain. By diving into this cutting-edge technology, I strive to stay at the forefront of innovation and contribute to the development of groundbreaking solutions in the blockchain space.`,
   // Add more content for each folder here
 };
 
