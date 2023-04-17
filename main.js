@@ -6,11 +6,7 @@ const delay = 50;
 
 const timer = ms => new Promise(res => setTimeout(res, ms))
 
-// var test = {
-//   name: "Brandon",
-//   occupation: "Dev"
-// }
-// console.log()
+
 
 function createColoredSpan(text, className) {
     const span = document.createElement('span');

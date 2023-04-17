@@ -11,7 +11,6 @@ const contentMap = {
   Hobbies: `In my free time, I enjoy exploring various APIs from different companies and integrating them into my personal projects. This not only helps me expand my knowledge and skillset but also allows me to experiment with creative solutions for a wide range of applications.
 
   Another area that fascinates me is blockchain technology, particularly its potential to revolutionize various industries in the future. I am an avid learner and creator of smart contracts on the Ethereum blockchain. By diving into this cutting-edge technology, I strive to stay at the forefront of innovation and contribute to the development of groundbreaking solutions in the blockchain space.`,
-  // Add more content for each folder here
 };
 
 let lastClickedFolder = null;
@@ -45,7 +44,6 @@ function drawConnectingLine(folder, contentTitle) {
 
   lineSvg.appendChild(polyline);
 
-  // Make the line visible
   polyline.style.opacity = "1";
 
 }
@@ -57,7 +55,6 @@ document.querySelectorAll(".folder").forEach((folder) => {
     const contentTitle = document.querySelector(".content-title");
     const contentText = document.querySelector(".content");
 
-    // Set the subject-title and content
     contentTitle.textContent = subject;
     contentText.textContent = contentMap[subject];
 
@@ -85,7 +82,6 @@ document.querySelectorAll(".folder").forEach((folder) => {
         }
       });
     } else {
-      // Remove any existing images if the subject is not "Description"
       const existingImage = contentText.querySelector("img");
       if (existingImage) {
         contentText.removeChild(existingImage);
@@ -96,17 +92,14 @@ document.querySelectorAll(".folder").forEach((folder) => {
 
     drawConnectingLine(folder, document.querySelector(".content-title"));
 
-    // Remove previous animation classes
     contentTitle.classList.remove("computerStatic");
     contentText.classList.remove("computerStatic");
 
 
-    // Trigger reflow to reset the animation
     void contentTitle.offsetWidth;
     void contentText.offsetWidth;
 
 
-    // Apply the animation class
     contentTitle.classList.add("computerStatic");
     contentText.classList.add("computerStatic");
 

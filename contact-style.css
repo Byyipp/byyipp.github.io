@@ -1,5 +1,3 @@
-/* Add your contact page styles here */
-/* You can copy styles from your other pages and modify them accordingly */
 html, body {
     height: 100%;
     margin: 0;
@@ -24,7 +22,6 @@ html, body {
   }
   
   h2 {
-    /* Add your desired styles for the title */
   }
 
 .email-link {
@@ -103,7 +100,6 @@ html, body {
     color: #32cd32;
   }
   
-  /* Animations */
   @keyframes fadeIn {
     0% {
       opacity: 0;
